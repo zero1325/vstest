@@ -78,8 +78,26 @@
 
       // 期限が過ぎた場合の処理
       if (deadlineDate < today) {
-        // 期限が過ぎていない
+        // 期限が過ぎていない場合のみ close クラスを追加
+        taskItem.classList.add('close');
+      } else {
+        // 期限が近い場合の処理（例として1日以内）
+        var oneDayLater = new Date();
+        oneDayLater.setDate(oneDayLater.getDate() + 1);
+        if (deadlineDate <= oneDayLater) {
+          taskItem.classList.add('warning');
+        }
+      }
 
+      // 期限が過ぎていない場合のみ、タスクを追加する
+      if (deadlineDate >= today) {
+        var taskList = document.getElementById('taskItems');
+        taskList.appendChild(taskItem);
+      } else {
+        // 期限が過ぎた場合は期限切れの提出物として追加する
+        var expiredList = document.getElementById('expiredItems');
+        expiredList.appendChild(taskItem);
+      }
     }
   </script>
 
