@@ -1,0 +1,5 @@
+　<form id="taskForm">
+    <input class="task_value" type="text" placeholder="タスク内容" required />
+    <input class="task_date" type="date" required />
+    <button class="task_submit" type="submit">タスク入力</button>
+  </form>
