@@ -78,20 +78,8 @@
 
       // 期限が過ぎた場合の処理
       if (deadlineDate < today) {
-        taskItem.classList.add('close');
-        var expiredList = document.getElementById('expiredItems');
-        expiredList.appendChild(taskItem);
-      } else {
-        // 期限が近い場合の処理（例として1日以内）
-        var oneDayLater = new Date();
-        oneDayLater.setDate(oneDayLater.getDate() + 1);
-        if (deadlineDate <= oneDayLater) {
-          taskItem.classList.add('warning');
-        }
+        // 期限が過ぎていない
 
-        var taskList = document.getElementById('taskItems');
-        taskList.appendChild(taskItem);
-      }
     }
   </script>
 
