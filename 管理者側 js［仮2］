@@ -28,23 +28,24 @@ function addTaskToList(taskValue, taskDate) {
 
   // 期限の日付をDateオブジェクトに変換
   var deadlineDate = new Date(taskDate);
-  var today = new Date();
+  var tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() - 1)//←今日＋１で明日にしてる
 
   // 期限が過ぎた場合の処理
-  if (deadlineDate < today) {
+  if (deadlineDate < tomorrow) {
     // 期限が過ぎていない場合のみ close クラスを追加
     taskItem.classList.add('close');
   } else {
-    // 期限が近い場合の処理（例として1日以内）
+    // 期限が3日以内のとき
     var oneDayLater = new Date();
-    oneDayLater.setDate(oneDayLater.getDate() + 1);
+    oneDayLater.setDate(oneDayLater.getDate() + 2);
     if (deadlineDate <= oneDayLater) {
       taskItem.classList.add('warning');
     }
   }
 
   // 期限が過ぎていない場合のみ、タスクを追加する
-  if (deadlineDate >= today) {
+  if (deadlineDate >= tomorrow) {
     var taskList = document.getElementById('taskItems');
     taskList.appendChild(taskItem);
   } else {
