@@ -29,7 +29,7 @@ function addTaskToList(taskValue, taskDate) {
   // 期限の日付をDateオブジェクトに変換
   var deadlineDate = new Date(taskDate);
   var tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() - 1)//←今日＋１で明日にしてる
+  tomorrow.setDate(tomorrow.getDate() - 1)//←これでなんか明日に出来た
 
   // 期限が過ぎた場合の処理
   if (deadlineDate < tomorrow) {
