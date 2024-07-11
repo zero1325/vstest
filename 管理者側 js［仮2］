@@ -1,3 +1,4 @@
+// フォームのsubmitイベントを取得
 document.getElementById('taskForm').addEventListener('submit', function(event) {
   event.preventDefault(); // デフォルトのsubmit動作をキャンセル
 
@@ -27,7 +28,7 @@ function addTaskToList(taskValue, taskDate) {
 
   // 期限の日付をDateオブジェクトに変換
   var deadlineDate = new Date(taskDate);
-  var today = new Date();
+  var today = new Date()+1; //←日付取得部分
 
   // 期限が過ぎた場合の処理
   if (deadlineDate < today) {
