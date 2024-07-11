@@ -1,0 +1,13 @@
+/* CSSは適宜追加してください */
+.task_item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.task_item.close {
+  background-color: #f8d7da; /* 期限切れタスクの背景色 */
+}
+.task_item.warning {
+  background-color: #fff3cd; /* 期限が近いタスクの背景色 */
+}
