@@ -4,13 +4,32 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .task_item.close {
   background-color: #000000; /* 期限切れタスクの背景色 */
   color: #ff0000 /* 期限切れタスクの文字の色 */
 }
+
 .task_item.warning {
   background-color: #fff3cd; /* 期限が近いタスクの背景色 */
 }
+
 .task_item.tyou_warning{
   background-color: #fd6471;
+}
+
+.pas{
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(227, 143, 143);
+}
+
+.eturann{
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(227, 143, 143);
 }
