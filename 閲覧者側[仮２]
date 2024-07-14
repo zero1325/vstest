@@ -1,0 +1,25 @@
+<!-- 閲覧者側 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>タスク管理 閲覧用</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>タスク管理 閲覧用</h1>
+
+  <div id="taskList">
+    <h2>タスク一覧</h2>
+    <ul id="taskItems"></ul>
+  </div>
+
+  <div id="expiredTasks">
+    <h2>期限切れの提出物</h2>
+    <ul id="expiredItems"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
