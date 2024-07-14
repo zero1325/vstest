@@ -38,8 +38,10 @@ function addTaskToList(taskValue, taskDate) {
   } else {
     // 期限が3日以内のとき
     var oneDayLater = new Date();
-    oneDayLater.setDate(oneDayLater.getDate() + 2);
+    oneDayLater.setDate(oneDayLater.getDate());
     if (deadlineDate <= oneDayLater) {
+      taskItem.classList.add('tyou_warning');
+    }else if(deadlineDate <= oneDayLater.setDate(oneDayLater.getDate() + 2)){
       taskItem.classList.add('warning');
     }
   }
