@@ -1,12 +1,15 @@
+<!-- Ctrl + / -->
+<!-- 管理者側 -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>タスク管理</title>
+<title>タスク管理 管理者ページ</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>タスク管理</h1>
+  <h1>タスク管理 管理者ページ</h1>
   <form id="taskForm">
     <div class="form-group">
       <label for="taskValue">タスク内容:</label>
