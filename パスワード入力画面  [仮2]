@@ -5,9 +5,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>pas入力画面</title>
 </head>
 <body>
-  
+  <h1>パスワードを入力してください</h1>
+
+  <a href="index.html" class="eturann">管理者ページへ</a>
+
 </body>
 </html>
