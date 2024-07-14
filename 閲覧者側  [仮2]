@@ -20,6 +20,10 @@
     <ul id="expiredItems"></ul>
   </div>
 
+<!-- パスワード入力画面へのボタン -->
+<a href="pas.html" class="pas">管理者ページへ</a>
+
+
   <script src="script.js"></script>
 </body>
 </html>
