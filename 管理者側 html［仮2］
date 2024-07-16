@@ -32,6 +32,8 @@
     <ul id="expiredItems"></ul>
   </div>
 
+  <a href="index.html" class="pas">閲覧者ページへ[仮]</a>
+
   <script src="script.js"></script>
 </body>
 </html>
