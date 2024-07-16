@@ -9,6 +9,7 @@
 </head>
 <body>
   <h1>パスワードを入力してください</h1>
+  <input type="password" placeholder="password入力">
 
   <a href="index.html" class="eturann">管理者ページへ</a>
 
