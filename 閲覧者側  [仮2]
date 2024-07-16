@@ -21,8 +21,8 @@
   </div>
 
 <!-- パスワード入力画面へのボタン -->
-<a href="pas.html" class="pas">管理者ページへ</a>
-
+<a href="pas.html" class="pas">pas入力ページへ[仮ボタン]</a>
+<a href="test.html" class="pas">管理者ページへ[仮ボタン]</a>
 
   <script src="script.js"></script>
 </body>
