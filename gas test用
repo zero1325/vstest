@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script type="text/javascript">
+    function sendText(){
+      google.script.run
+        .withSuccessHandler(inform())
+        .writeSheet(document.forms['formText'].elements['message'].value);
+    }
+    function inform() {
+      alert('スプレッドシートに書き込みました');
+    }
+    </script>
+  </head>
+  <body>
+      <h1>スプレッドシート書き込みテスト</h1>
+      <p>スプレッドシートに書き込む内容を入力↓</p>
+      <form name="formText">
+        <input type="text" name="message">
+        <input type="button" onclick="sendText()" value="送信">
+      </form>
+  </body>
+</html>
